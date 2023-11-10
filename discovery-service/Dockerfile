@@ -5,10 +5,10 @@ FROM openjdk:19-jdk-alpine
 VOLUME /tmp
 
 # Make port 8761 available to the world outside container
-EXPOSE 8761
+EXPOSE 80
 
 # Set application's JAR file
-ARG JAR_FILE=DiscoveryService-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/DiscoveryService-0.0.1-SNAPSHOT.jar
 
 # Add the application's JAR file to the container
 ADD ${JAR_FILE} app.jar
