@@ -5,7 +5,7 @@ FROM openjdk:19-jdk-alpine
 VOLUME /tmp
 
 # Make port 8761 available to the world outside container
-EXPOSE 8082
+EXPOSE 80
 
 # Set application's JAR file
 ARG JAR_FILE=ApiGateway-0.0.1-SNAPSHOT.jar
